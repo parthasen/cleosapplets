@@ -186,6 +186,7 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
       mime-types
+    pg (0.18.0)
     polyamorous (1.2.0)
       activerecord (>= 3.0)
     puma (2.11.2)
@@ -327,6 +328,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   paperclip (~> 4.2)
+  pg
   puma
   rack-cors
   rack-timeout

@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 gem 'horse_power'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -50,6 +48,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
   gem 'factory_girl_rails', '~> 4.0'
   gem 'database_cleaner', '~> 1.3.0'
+  gem 'sqlite3'
 end
 
 group :development do
@@ -77,8 +76,8 @@ gem 'aws-sdk', '~> 1.5.7'
 gem 'rails_config', '~> 0.4.2'
 group :production do
   gem 'rails_12factor'
+  gem 'pg'
 end
-
 gem 'rack-timeout'
 gem 'puma'
 gem 'identity_cache'

@@ -1,26 +1,5 @@
 Rails.application.configure do
 
-  config.cache_store = :null_store
-  config.identity_cache_store = :null_store
-	#config.action_mailer.perform_deliveries = false
-	config.action_mailer.raise_delivery_errors = true
-	config.action_mailer.default_options = {from: 'testing123@example.com'}	
-	# Emails get sent here ::ActionMailer::Base.deliveries array.
-	config.action_mailer.delivery_method = :test
-	config.action_mailer.smtp_settings = {
-	  address:              'smtp.gmail.com',
-	  port:                 587,
-	  domain:               'localhost:3000',
-	  user_name:            'testing123',
-	  password:             'testing123',
-	  authentication:       'plain',
-	  enable_starttls_auto: true  }
-	::Paperclip.options[:command_path] = "/usr/bin/"
-	#Set Paperclip defaults here
-	#Paperclip::Attachment.default_options[:storage] = :fog
-
-  # Settings specified here will take precedence over those in config/application.rb.
-
   # The test environment is used exclusively to run your application's
   # test suite. You never need to work with it otherwise. Remember that
   # your test database is "scratch space" for the test suite and is wiped

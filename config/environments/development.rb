@@ -1,20 +1,6 @@
 Rails.application.configure do
 
-  config.cache_store = :memory_store
-  config.identity_cache_store = :memory_store, { size: 64.megabytes }
-	config.action_mailer.perform_deliveries = false
-	config.action_mailer.raise_delivery_errors = false
-	config.action_mailer.default_options = {from: ENV['GMAIL_USERNAME']}
-	config.action_mailer.delivery_method = :smtp
-	config.action_mailer.smtp_settings = {
-	  address:              'smtp.gmail.com',
-	  port:                 587,
-	  domain:               'localhost:3000',
-	  user_name:            ENV['GMAIL_USERNAME'],
-	  password:             ENV['GMAIL_PASSWORD'],
-	  authentication:       'plain',
-	  enable_starttls_auto: true  }
-	::Paperclip.options[:command_path] = "/usr/bin/"
+ 
 	#Set Paperclip defaults here
 	#Paperclip::Attachment.default_options[:storage] = :fog
 

@@ -14,15 +14,6 @@ module AppletWebsite
     #So url_for works in the mailer
 		config.action_mailer.default_url_options = { host: 'localhost:3000' }
 		#config.middleware.insert_before "ActionDispatch::Static", "Rack::Cors" do
-		config.middleware.use Rack::Cors do
-      allow do
-        origins '*'
-        resource '*',
-          :headers => :any,
-          :methods => [:get, :post, :put, :delete, :options],
-          :expose => ['Logged-In-Status','Auth-Token','Main-Api-Header']      
-      end
-    end
 
 
     #So Rails-Api doesn't remove all of the middleware

@@ -1,0 +1,2 @@
+token_header: "Auth-Token"
+main_api_header: "Main-Api-Header"

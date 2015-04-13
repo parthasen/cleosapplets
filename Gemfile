@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.1'
+gem 'jquery-rails'
+gem 'turbolinks'
 group :production do
   gem 'rails_12factor'
   gem 'pg'
